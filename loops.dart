@@ -26,6 +26,20 @@ void main() {
 
   }
 
+  //while loop
+
+  String value = "GREAT";
+
+  i = 0;
+
+  while(i < value.length){
+
+    print (value[i]);
+
+    i++;
+
+  }
+
 
 
 
