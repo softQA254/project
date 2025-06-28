@@ -1,31 +1,35 @@
 void main() {
 
-    double shippingCost;
-
     String destination = "XYZ";
 
     double weight = 6.9;
 
+    int? cost;
+
+    double shippingCost;
+
     if (destination == "XYZ"){
 
-        shippingCost = 5 * weight;
-      
-        print("The shipping cost is $shippingCost dollars.");
+       cost = 5;
+    
     }
     else if (destination == "ABC") {
 
-        shippingCost = 7 * weight;
-        print("The shipping cost is $shippingCost dollars.");
+        cost = 7;
     }
     else if (destination == "PQR") {
 
-        shippingCost = 10 * weight;
-        print("The shipping cost is $shippingCost dollars.");
+        cost = 10;
     }
 
     else {
         print("invalid shipping destination");
+        
+        return;
     }
 
+    shippingCost = cost * weight;
+
+    print("Your shipping cost is $shippingcost dollars")
 
 }
