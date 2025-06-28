@@ -40,9 +40,18 @@ void main() {
 
   }
 
+  //do while logic
 
+ int i = 0;
 
+ String value = "ARMY" ;
 
+ do {
+  print (value[i]); // display the specific character on the string at i position
+  i++ ; // keep increamenting i
 
+ } while (i< value.length);
 
 }
+
+
