@@ -32,4 +32,51 @@ void main() {
 
     print("Your shipping cost is $shippingcost dollars")
 
-}
+
+
+// using switch
+
+switch(destination) {
+    case "XYZ":
+        cost = 10;
+
+    case "ABC":
+        cost = 8;
+
+    case "PQR":
+        cost = 4.7;
+
+    default:
+        print("invalid destination");
+
+    
+    shippingCost = cost * weight;
+    print( "Your shipping cost is $shippingCost dollars")
+
+    }
+
+     switch(destination) {
+      case "XYZ":
+         cost = 10;
+         break;
+
+      case "ABC":
+        cost = 8;
+        break;
+
+      case "PQR":
+        cost = 4.7;
+        break;
+
+      default:
+        print("invalid destination");
+        break;
+    }
+
+    
+  shippingCost = cost! * weight;
+        
+  print ("Your shipping cost is $shippingCost dollars");
+
+    }
+
