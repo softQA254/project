@@ -34,27 +34,6 @@ void main() {
 
 
 
-// using switch
-
-switch(destination) {
-    case "XYZ":
-        cost = 10;
-
-    case "ABC":
-        cost = 8;
-
-    case "PQR":
-        cost = 4.7;
-
-    default:
-        print("invalid destination");
-
-    
-    shippingCost = cost * weight;
-    print( "Your shipping cost is $shippingCost dollars")
-
-    }
-
     //Using switch statement
 
      switch(destination) {
