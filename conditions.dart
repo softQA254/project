@@ -55,6 +55,8 @@ switch(destination) {
 
     }
 
+    //Using switch statement
+
      switch(destination) {
       case "XYZ":
          cost = 10;
