@@ -5,6 +5,16 @@ void main() {
     print (i)
   }
 
+  //Loop through a string
+
+  for(int i=1; i<10; i++) {
+
+    String hello = "Hello World!";
+
+    print(hi.substring(i, 11));
+
+  }
+
 
 
 
