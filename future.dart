@@ -7,46 +7,30 @@ Future is a class. It is also a data type that can be assigned to a function
 
  */
 
-Future <String> fetchUserData() async {
+// Build a Dart program that:
 
-  await Future.delayed(Duration(seconds: 5));
+// Simulates fetching a list of names from a server after a delay.
 
-  return "Lydia Okoth";
+// Adds a new name to the list after the fetch.
 
+// Prints the updated list.
+
+Future <List<String>> fetchNames() async {
+
+  await Future.delay(Duration(seconds: 2));
+
+  return[Lydia, Brian]
 }
 
-void main() {
+void main() async{
+  List <String> names = await fetchNames();
+  print("The client list contains" ${names.join(',')});
+  print("adding Zuri");
+  names.add["Zuri"];
 
-  String user = await fetchUserData();
-
-  print("Welcome, $user")
-
+  for var name in names {
+    print(- $name);
+  
 }
 
-// afunction that waits for the slow network call to complete and then prints Done
 
-Future <String> slowNetworkCall() async {
-
-  Future.delay(Duration(seconds: 3));
-  () => Done
-}
-
-void main() {
-  print("patience pays");
-  network = slowNetworkCall() ;
-  print(network);
-
-}
-
-Future <String> networkCall() async {
-
-  await Future.delay(Duration(seconds: 3));
-  () => "Done!"
-}
-
-void main() {
-  print("patience pays");
-  print("almost there...");
-  String network = networkCall();
-  print(network);
-}
