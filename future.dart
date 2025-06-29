@@ -42,22 +42,29 @@ void main() async{
 
 // If the username is empty, it throws an error and catches it using a try-catch.
 
-Future <String> Username(String name) async {
+Future <String> username(String name) async {
+
+
 
   await Future.delayed(Duration(seconds: 3));
 
-  return "Lydia";
+  if (name.isEmpty) {
+    throw "Invalid username"
+  }
+
+  return name;
 }
 
-void main() {
-  username = Username()
+void main() async {
+  try{
+    names = await username("Lydia");
+    print("welcome, $names");
+  }
+  catch (e) {
+    print("An error occurred!")
+  }
 
-  if {
-    username != '';
-    print("Welcome $username");
+}
+
   
-  }
-  else {
-    print ("Invalid User");
-  }
-}
+
