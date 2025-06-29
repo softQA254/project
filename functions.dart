@@ -18,3 +18,21 @@ void printName () {
 
     print("Lydia")
 } // this is a function that does not return any value but only displays the name Lydia.
+
+//A function that returns a string
+
+String stringFunction () {
+    return " " ;
+}
+
+int intFunction() {
+    return 3 ;
+}
+
+bool boolFunction() {
+    return false ;
+}
+
+return dynamicFunction() {
+    return dynamic ;
+}
