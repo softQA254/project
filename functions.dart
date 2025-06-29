@@ -12,6 +12,17 @@ void +> shows that the function does not return any value
 void main () {
     printName() // calling the function
 
+    int num = intFunction();
+    print(num);
+
+    String sentence = stringFunction();
+    print(sentence);
+
+    bool isFalse = boolFunction();
+    print(isFalse)
+
+
+
 }
 
 void printName () {
