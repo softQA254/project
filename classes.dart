@@ -1,29 +1,53 @@
 void main() {
 
-}
-class Salon {
+  //Assigning a variable to a class
 
-  //Attributes
+  Salon salon = Salon(5000, 70);
 
-  Sting makeup;
-  String braids;
-  int plaitAmount;
-  int braidsCost;
-  double bookingTime;
+  //using the variable to access methods in the class
 
-  //methods
-
-double starttime(){
-  return 08:00
+  print (salon.braidsCost);
+  
+  
 }
 
-bool isComplete() {
-  => true || false
-}
 
-String giveFeedback() {
 
-  return " "
-}
+  class Salon {
+    
+    
+
+    //Attributes
+
+    String makeup = "foundation";
+    String braids = "Abuja";
+    int plaitAmount = 5000;
+    int braidsCost = 70;
+    DateTime bookingTime = DateTime.now();
+    
+    //constructor
+    
+    Salon (this.plaitAmount, this.braidsCost) {
+      print(starttime());
+      print(giveFeedback());
+    }
+
+    //methods
+
+    DateTime starttime(){
+      return DateTime.now();
+    }
+
+    bool isComplete() {
+      
+      return true;
+    }
+
+    String giveFeedback() {
+
+      return " Amazing service";
+
+    }
+
 
 }
