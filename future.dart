@@ -34,3 +34,30 @@ void main() async{
 }
 
 
+// Simulates a login screen where the user provides a username.
+
+// Uses a Future.delayed() to imitate checking credentials (2-second delay).
+
+// If the username is not empty, it completes successfully and shows a welcome message.
+
+// If the username is empty, it throws an error and catches it using a try-catch.
+
+Future <String> Username(String name) async {
+
+  await Future.delayed(Duration(seconds: 3));
+
+  return "Lydia";
+}
+
+void main() {
+  username = Username()
+
+  if {
+    username != '';
+    print("Welcome $username");
+  
+  }
+  else {
+    print ("Invalid User");
+  }
+}
